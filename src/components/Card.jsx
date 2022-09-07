@@ -7,7 +7,7 @@ const Card = ({ img, language, country, isFavorite, company, title }) => {
   useEffect(() => {
     fetch(`https://restcountries.com/v3.1/name/${country}`)
     .then(response => response.json())
-    .then(data => setCountryImg(data.flags.png))
+    .then(data => setCountryImg(data[0].flags.png))
     .catch(error => console.error(error));
   }, [])
 
