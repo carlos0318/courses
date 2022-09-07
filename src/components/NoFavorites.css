@@ -1,0 +1,9 @@
+.nofavorites {
+    padding: 10px;
+}
+
+.nofavorites__cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
